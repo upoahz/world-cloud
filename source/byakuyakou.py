@@ -1,7 +1,8 @@
 # coding=utf-8
+import os
 import jieba.analyse
 
-path = '/Users/zhao/workspace/zpnotes/world-cloud/data/byakuyakou.txt'
+path = os.path.realpath('../data/byakuyakou.txt')
 
 with open(path, 'r', encoding='utf-8') as f:
     data = f.read()
